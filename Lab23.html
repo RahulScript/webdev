@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Fruits</title>
+</head>
+<body>
+
+    <h2>Fruits List</h2>
+    <ul id="fruitList"></ul>
+
+    <script>
+        // Create the array
+        let fruits = ["Apple", "Banana", "Orange"];
+
+        // Get the <ul> element
+        let list = document.getElementById("fruitList");
+
+        // Loop through the array and add each fruit to the list
+        for (let i = 0; i < fruits.length; i++) {
+            let li = document.createElement("li");
+            li.textContent = fruits[i];
+            list.appendChild(li);
+        }
+    </script>
+
+</body>
+</html>
