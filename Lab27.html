@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Count Characters in a String</title>
+</head>
+<body>
+    <h1>Count Characters in a String</h1>
+    <input type="text" id="inputString" placeholder="Type something..." />
+    <button onclick="countCharacters()">Count Characters</button>
+    <p id="result"></p>
+
+    <script>
+        function countCharacters() {
+            const str = document.getElementById('inputString').value;
+            const count = str.length;
+            document.getElementById('result').textContent = `Number of characters: ${count}`;
+        }
+    </script>
+</body>
+</html>
