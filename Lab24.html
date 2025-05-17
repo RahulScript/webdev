@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Number in Array</title>
+</head>
+<body>
+
+    <h2>Check if Number is in Array</h2>
+
+    <input type="number" id="userInput" placeholder="Enter a number">
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Define the array
+        let numbers = [10, 25, 37, 42, 56];
+
+        function checkNumber() {
+            let input = parseInt(document.getElementById("userInput").value);
+            let result = document.getElementById("result");
+
+            if (numbers.includes(input)) {
+                result.textContent = input + " is in the array.";
+            } else {
+                result.textContent = input + " is NOT in the array.";
+            }
+        }
+    </script>
+
+</body>
+</html>
