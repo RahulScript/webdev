@@ -2,69 +2,88 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Web Designing Links</title>
+<title>Your Stylish Portfolio</title>
 <style>
-  /* Reset some default margins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  /* Reset */
   * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
-    margin: 0;
-    padding: 40px 20px;
-    color: #2c3e50;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    padding: 50px 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 50px;
   }
 
   h1 {
-    font-size: 2.75rem;
+    font-size: 3.8rem;
     font-weight: 700;
-    color: #1a237e;
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    letter-spacing: 0.06em;
+    color: #00e5ff;
+    text-shadow:
+      0 0 8px #00e5ff,
+      0 0 20px #00e5ff,
+      0 0 30px #00b8d9;
   }
 
   h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #89cff0;
+    margin-top: 6px;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 5px rgba(137, 207, 240, 0.7);
+  }
+
+  h3 {
     font-weight: 400;
-    color: #455a64;
-    margin-bottom: 40px;
-    font-size: 1.3rem;
-    letter-spacing: 0.04em;
+    font-size: 1.1rem;
+    color: #b0c4de;
+    margin-top: 8px;
+    font-style: italic;
+    letter-spacing: 0.03em;
   }
 
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    max-width: 600px;
     width: 100%;
-    max-width: 480px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px 25px;
   }
 
-  li {
-    /* Removed margin because grid gap handles spacing */
-  }
+  li {}
 
   a {
     display: block;
-    background: #3949ab;
-    color: #fff;
-    padding: 14px 22px;
-    border-radius: 10px;
-    font-size: 1rem;
+    background: linear-gradient(145deg, #00bcd4, #0097a7);
+    color: #e0f7fa;
+    padding: 15px 25px;
+    border-radius: 12px;
     font-weight: 600;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
-    box-shadow: 0 5px 10px rgba(57, 73, 171, 0.3);
+    box-shadow:
+      0 5px 10px rgba(0, 188, 212, 0.5),
+      inset 0 -3px 8px rgba(0, 188, 212, 0.4);
     transition: 
-      background-color 0.3s ease, 
+      background 0.3s ease,
       transform 0.2s ease,
       box-shadow 0.3s ease;
     user-select: none;
@@ -72,42 +91,44 @@
 
   a:hover,
   a:focus {
-    background-color: #283593;
-    box-shadow: 0 8px 15px rgba(40, 53, 147, 0.5);
-    transform: translateY(-3px);
+    background: linear-gradient(145deg, #00e5ff, #00acc1);
+    box-shadow:
+      0 8px 15px rgba(0, 229, 255, 0.7),
+      inset 0 -4px 10px rgba(0, 229, 255, 0.6);
+    transform: translateY(-4px);
     outline: none;
   }
 
   a:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 8px rgba(40, 53, 147, 0.3);
+    transform: translateY(-2px);
+    box-shadow:
+      0 5px 8px rgba(0, 188, 212, 0.5),
+      inset 0 -2px 6px rgba(0, 188, 212, 0.4);
   }
 
-  /* Responsive typography */
+  /* Responsive font scaling */
   @media (max-width: 480px) {
-    body {
-      padding: 30px 15px;
-    }
-
     h1 {
-      font-size: 2rem;
+      font-size: 2.8rem;
     }
 
     h2 {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
+      font-size: 1.2rem;
     }
 
-    ul {
-      grid-template-columns: 1fr;
-      max-width: 320px;
+    a {
+      font-size: 1rem;
+      padding: 12px 20px;
     }
   }
 </style>
 </head>
 <body>
-  <h1>Web Designing Links</h1>
-  <h2>Click on the links below to view the pages.</h2>
+  <header>
+    <h1>Rahul Vaghela</h1>
+    <h2>B.Sc. Computer Science</h2>
+    <h3>Web Designing Links</h3>
+  </header>
 
   <ul>
     <li><a href="Lab1.html">Lab 1</a></li>
