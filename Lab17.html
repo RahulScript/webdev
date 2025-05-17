@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle Text Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Toggle Text Using Button</h1>
+    <button id="toggleBtn">Show Message</button>
+    <p id="message" style="display: none;">This is the toggleable message!</p>
+
+    <script>
+        const button = document.getElementById('toggleBtn');
+        const message = document.getElementById('message');
+
+        button.onclick = function () {
+            if (message.style.display === 'none') {
+                message.style.display = 'block';
+                button.textContent = 'Hide Message';
+            } else {
+                message.style.display = 'none';
+                button.textContent = 'Show Message';
+            }
+        };
+    </script>
+
+</body>
+</html>
