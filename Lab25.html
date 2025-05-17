@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Object Example</title>
+</head>
+<body>
+
+    <h2>Student Object</h2>
+    <button onclick="showStudent()">Show Student Info</button>
+
+    <p id="output"></p>
+
+    <script>
+        // Create the student object
+        const student = {
+            name: "Rahul",
+            age: 20,
+            class: "BSc CS-AI"
+        };
+
+        function showStudent() {
+            let output = "Name: " + student.name + "<br>" +
+                         "Age: " + student.age + "<br>" +
+                         "Class: " + student.class;
+
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+
+</body>
+</html>
